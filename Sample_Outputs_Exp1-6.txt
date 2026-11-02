@@ -1,0 +1,68 @@
+=== Exp1 (input 8) ===
+Enter the number of terms (n): Iterative: 0 1 1 2 3 5 8 13 
+Recursive:  0 1 1 2 3 5 8 13 
+
+Iterative time : 8652 ns
+Recursive time : 1314 ns
+Recursive function calls: 100
+
+Time  complexity: Iterative = O(n),  Recursive = O(2^n)
+Space complexity: Iterative = O(1),  Recursive = O(n) (call stack)
+
+=== Exp2 (6 symbols a2 b3 c5 d7 e9 f13, message abcdef) ===
+Enter number of symbols: Enter symbol and its frequency: Enter symbol and its frequency: Enter symbol and its frequency: Enter symbol and its frequency: Enter symbol and its frequency: Enter symbol and its frequency: 
+Symbol	Frequency	Huffman Code
+a	2		1010
+b	3		1011
+c	5		100
+d	7		00
+e	9		01
+f	13		11
+
+Weighted external path length = 93
+
+Enter a message to encode: Encoded message: 10101011100000111
+Decoded message: abcdef
+
+=== Exp3 (manual example W=60) ===
+Enter number of items: Enter profit and weight of item A: Enter profit and weight of item B: Enter profit and weight of item C: Enter profit and weight of item D: Enter capacity of knapsack: 
+Item	Profit	Weight	Ratio	Fraction taken
+B	100	10	10.00	1.00
+A	280.00	40.00	7.00	1.00
+C	120.00	20.00	6.00	0.50
+
+Maximum profit = 440.00
+
+=== Exp4 ===
+Enter number of items: Enter weight and profit of item 1: Enter weight and profit of item 2: Enter weight and profit of item 3: Enter weight and profit of item 4: Enter capacity of knapsack: 
+Maximum profit (Branch and Bound) = 220
+Maximum profit (Dynamic Programming) = 220
+
+=== Exp5 (N=4, first queen column 2) ===
+Enter N: Enter column (1 to 4) for the first queen in row 1: 
+Final N-Queens matrix:
+0 1 0 0 
+0 0 0 1 
+1 0 0 0 
+0 0 1 0 
+
+=== Exp6 (N=4) ===
+Enter matrix size N (NxN): Result (sequential):
+43	100	132	87	
+56	68	78	36	
+8	41	61	35	
+56	93	129	97	
+Result (thread per row):
+43	100	132	87	
+56	68	78	36	
+8	41	61	35	
+56	93	129	97	
+Result (thread per cell):
+43	100	132	87	
+56	68	78	36	
+8	41	61	35	
+56	93	129	97	
+
+Sequential time      : 1 microseconds
+Thread-per-row time  : 463 microseconds
+Thread-per-cell time : 701 microseconds
