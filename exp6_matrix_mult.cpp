@@ -1,5 +1,14 @@
 // Exp 6: Matrix multiplication - sequential vs multithreaded using POSIX threads (pthread)
 // Compile: g++ exp6_pthread.cpp -o exp6 -lpthread
+
+// Compile:  g++ exp6_matrix_mult.cpp -o exp6_matrix_mult -pthread
+// Run:     ./exp6_matrix_mult
+
+//Ubantu
+// Complile:  g++ exp6_matrix_mult.cpp -o exp6_matrix_mult -pthread
+// Run:       ./exp6_matrix_mult
+
+
 #include <iostream>
 #include <vector>
 #include <pthread.h>
